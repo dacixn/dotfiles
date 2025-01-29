@@ -1,0 +1,86 @@
+configuration {
+	modes: [ combi ];
+	combi-modes: [ window, drun, run ];
+}
+
+inputbar {
+	children: [ prompt, entry ];
+}
+
+* {
+	font: "Rubik Medium 12";
+}
+
+mainbox {
+	padding: 0px;
+	margin: 0px;
+}
+
+entry {
+	placeholder: "";
+	padding: 6px;
+	background-color: grey;
+	border-radius: 8px;
+	font: "Rubik 12";
+}
+
+listview {
+  	border: 0px;
+	lines: 5;
+	margin: 1px;
+	margin-bottom: 0px;
+	scrollbar: false;
+	spacing: 0px;
+}
+
+element {
+	children: [ element-icon, element-text ];
+	spacing: 6px;
+	padding: 4px;
+	border-radius: 8px;
+	margin: 0px;
+	background: transparent;
+}
+
+element normal.normal, button {
+    background-color: none;
+}
+
+
+element selected {
+    background-color: Orange;
+}
+
+element-icon {
+	size: 32px;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+
+#textbox-prompt-colon {
+    expand: false;
+	enabled: false;
+    str: "";
+    margin: 0px 0em 0em 0em;
+}
+
+
+window {
+	border-radius: 10px;
+	padding: 6px;
+	width: 450px;
+	border: none;
+	background-color: #000000;
+}
+
+prompt {
+	background-color: grey;
+	padding: 6px;
+	border-radius: 8px;
+	margin: 0px 6px 0px 0px;
+	font: "Rubik Medium 12";
+}
+
